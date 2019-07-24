@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Bezier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Geolocation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Greeting Prog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Multiplication Tables" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/NavigationController" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/NotificationCenter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Quizz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/SwitchControllers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/TableViews" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/Tabs" vcs="Git" />
+  </component>
+</project>
