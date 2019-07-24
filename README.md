@@ -1,5 +1,5 @@
-#An Introduction to iOS Development
+# An Introduction to iOS Development
 
 ## Documents
-- [slides](vpoupet.github.io/iOS/slides.html)
-- [assignment](vpoupet.github.io/iOS/assignment.pdf)
+- [slides](https://vpoupet.github.io/iOS/slides.html)
+- [assignment](https://vpoupet.github.io/iOS/assignment.pdf)
