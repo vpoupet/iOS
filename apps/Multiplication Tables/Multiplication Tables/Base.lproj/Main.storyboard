@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multiplication_Tables" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bn1-jy-Xu1" customClass="MultiplicationView" customModule="Multiplication_Tables" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="343" height="343"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bn1-jy-Xu1" secondAttribute="height" id="EhA-rQ-5t1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EhA-rQ-5t1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="EhA-rQ-5t1"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="C1Z-tW-ace">
+                                <rect key="frame" x="14" y="617" width="347" height="31"/>
+                                <connections>
+                                    <action selector="mChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ADp-cw-fQW"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="19g-5X-WGk">
+                                <rect key="frame" x="14" y="532" width="347" height="31"/>
+                                <connections>
+                                    <action selector="nChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="G0a-5B-oBd"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eZa-Ul-g75">
+                                <rect key="frame" x="140.5" y="495" width="94" height="29"/>
+                                <connections>
+                                    <action selector="nStepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="NV9-nV-HIc"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wA-8h-YH3">
+                                <rect key="frame" x="73" y="499" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-Sh-pSJ">
+                                <rect key="frame" x="140.5" y="580" width="94" height="29"/>
+                                <connections>
+                                    <action selector="mStepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="h3n-dR-794"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-ol-3S4">
+                                <rect key="frame" x="73" y="588" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Jo-ol-3S4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="0XB-ls-XnF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C1Z-tW-ace" secondAttribute="bottom" constant="20" id="GHR-Y3-vfk"/>
+                            <constraint firstItem="Jlk-Sh-pSJ" firstAttribute="top" secondItem="19g-5X-WGk" secondAttribute="bottom" constant="18" id="M2s-2j-mNl"/>
+                            <constraint firstItem="7wA-8h-YH3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="MXb-5v-MXp"/>
+                            <constraint firstItem="19g-5X-WGk" firstAttribute="top" secondItem="7wA-8h-YH3" secondAttribute="bottom" constant="12" id="Tlf-bm-Cat"/>
+                            <constraint firstItem="eZa-Ul-g75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VbC-vX-pYF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19g-5X-WGk" secondAttribute="trailing" id="cIG-UG-BUa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="19g-5X-WGk" secondAttribute="leading" id="cpm-uw-d6h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bn1-jy-Xu1" secondAttribute="trailing" id="eSx-Rh-CH1"/>
+                            <constraint firstItem="bn1-jy-Xu1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ftD-hO-Lwd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bn1-jy-Xu1" secondAttribute="leading" id="h4b-hc-pe1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="C1Z-tW-ace" secondAttribute="leading" id="j8e-mb-gly"/>
+                            <constraint firstItem="C1Z-tW-ace" firstAttribute="top" secondItem="2Jo-ol-3S4" secondAttribute="bottom" constant="8" id="k8b-ep-wtC"/>
+                            <constraint firstItem="Jlk-Sh-pSJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vDR-dH-FRl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C1Z-tW-ace" secondAttribute="trailing" id="yFU-lk-Tcu"/>
+                            <constraint firstItem="C1Z-tW-ace" firstAttribute="top" secondItem="Jlk-Sh-pSJ" secondAttribute="bottom" constant="8" id="ylN-dp-cyN"/>
+                            <constraint firstItem="19g-5X-WGk" firstAttribute="top" secondItem="eZa-Ul-g75" secondAttribute="bottom" constant="8" id="ztc-2e-MYW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="C1Z-tW-ace"/>
+                                <exclude reference="19g-5X-WGk"/>
+                                <exclude reference="eZa-Ul-g75"/>
+                                <exclude reference="7wA-8h-YH3"/>
+                                <exclude reference="Jlk-Sh-pSJ"/>
+                                <exclude reference="2Jo-ol-3S4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MXb-5v-MXp"/>
+                                <exclude reference="VbC-vX-pYF"/>
+                                <exclude reference="Tlf-bm-Cat"/>
+                                <exclude reference="cIG-UG-BUa"/>
+                                <exclude reference="cpm-uw-d6h"/>
+                                <exclude reference="GHR-Y3-vfk"/>
+                                <exclude reference="ztc-2e-MYW"/>
+                                <exclude reference="0XB-ls-XnF"/>
+                                <exclude reference="M2s-2j-mNl"/>
+                                <exclude reference="vDR-dH-FRl"/>
+                                <exclude reference="j8e-mb-gly"/>
+                                <exclude reference="k8b-ep-wtC"/>
+                                <exclude reference="yFU-lk-Tcu"/>
+                                <exclude reference="ylN-dp-cyN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="C1Z-tW-ace"/>
+                                <include reference="19g-5X-WGk"/>
+                                <include reference="eZa-Ul-g75"/>
+                                <include reference="7wA-8h-YH3"/>
+                                <include reference="Jlk-Sh-pSJ"/>
+                                <include reference="2Jo-ol-3S4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MXb-5v-MXp"/>
+                                <include reference="VbC-vX-pYF"/>
+                                <include reference="Tlf-bm-Cat"/>
+                                <include reference="cIG-UG-BUa"/>
+                                <include reference="cpm-uw-d6h"/>
+                                <include reference="GHR-Y3-vfk"/>
+                                <include reference="ztc-2e-MYW"/>
+                                <include reference="0XB-ls-XnF"/>
+                                <include reference="M2s-2j-mNl"/>
+                                <include reference="vDR-dH-FRl"/>
+                                <include reference="j8e-mb-gly"/>
+                                <include reference="k8b-ep-wtC"/>
+                                <include reference="yFU-lk-Tcu"/>
+                                <include reference="ylN-dp-cyN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mLabel" destination="2Jo-ol-3S4" id="71P-Ex-sfp"/>
+                        <outlet property="mSlider" destination="C1Z-tW-ace" id="ReH-21-69x"/>
+                        <outlet property="mStepper" destination="Jlk-Sh-pSJ" id="2dj-2Z-eXo"/>
+                        <outlet property="multiplicationView" destination="bn1-jy-Xu1" id="6y9-nx-EDs"/>
+                        <outlet property="nLabel" destination="7wA-8h-YH3" id="KNl-G5-N9W"/>
+                        <outlet property="nSlider" destination="19g-5X-WGk" id="wKM-gU-j5W"/>
+                        <outlet property="nStepper" destination="eZa-Ul-g75" id="dU0-h2-oI6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="348.75"/>
+        </scene>
+    </scenes>
+</document>

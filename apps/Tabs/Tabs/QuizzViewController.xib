@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizzViewController" customModule="Tabs" customModuleProvider="target">
+            <connections>
+                <outlet property="answerLabel" destination="Fle-Xu-KSM" id="wHV-0f-7py"/>
+                <outlet property="questionLabel" destination="QR5-IU-5nu" id="bYr-uA-zB7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hzD-fQ-OUU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-IU-5nu">
+                    <rect key="frame" x="153" y="169" width="69" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTn-oy-E2h">
+                    <rect key="frame" x="140" y="267" width="94" height="30"/>
+                    <state key="normal" title="Show Answer">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="7N2-x5-yZh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fle-Xu-KSM">
+                    <rect key="frame" x="158" y="305" width="58" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLk-z5-LQk">
+                    <rect key="frame" x="138" y="131" width="98" height="30"/>
+                    <state key="normal" title="Next Question">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="AY3-XF-XfT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="HLk-z5-LQk" secondAttribute="centerX" constant="0.5" id="90o-X6-JEJ"/>
+                <constraint firstAttribute="centerX" secondItem="sTn-oy-E2h" secondAttribute="centerX" constant="0.5" id="VKg-si-oOS"/>
+                <constraint firstItem="QR5-IU-5nu" firstAttribute="top" secondItem="HLk-z5-LQk" secondAttribute="bottom" constant="8" id="XkU-jR-uDU"/>
+                <constraint firstAttribute="centerX" secondItem="Fle-Xu-KSM" secondAttribute="centerX" constant="0.5" id="dyA-Ne-Vra"/>
+                <constraint firstItem="HLk-z5-LQk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="131" id="f3X-k3-c75"/>
+                <constraint firstItem="Fle-Xu-KSM" firstAttribute="top" secondItem="sTn-oy-E2h" secondAttribute="bottom" constant="8" id="ngb-c5-oGY"/>
+                <constraint firstAttribute="centerX" secondItem="QR5-IU-5nu" secondAttribute="centerX" id="tF9-dH-SZc"/>
+                <constraint firstItem="sTn-oy-E2h" firstAttribute="top" secondItem="QR5-IU-5nu" secondAttribute="bottom" constant="77.5" id="tbi-8K-n3m"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
